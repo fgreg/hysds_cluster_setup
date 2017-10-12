@@ -1,0 +1,127 @@
+# mozart
+export MOZART_PVT_IP=
+export MOZART_PUB_IP=
+export MOZART_FQDN=
+
+# mozart rabbitmq
+export MOZART_RABBIT_PVT_IP=
+export MOZART_RABBIT_PUB_IP=
+export MOZART_RABBIT_FQDN=
+export MOZART_RABBIT_USER=ops
+export MOZART_RABBIT_PASSWORD=
+
+# mozart redis
+export MOZART_REDIS_PVT_IP=
+export MOZART_REDIS_PUB_IP=
+export MOZART_REDIS_FQDN=
+
+# mozart ES
+export MOZART_ES_PVT_IP=
+export MOZART_ES_PUB_IP=
+export MOZART_ES_FQDN=
+
+export OPS_USER=ops
+export OPS_HOME=/home/ops
+export OPS_PASSWORD_HASH=
+export LDAP_GROUPS=
+export KEY_FILENAME=/home/ops/.ssh/id_rsa
+export JENKINS_USER=jenkins
+export JENKINS_DIR=/home/ops/jenkins
+
+# metrics
+export METRICS_PVT_IP=
+export METRICS_PUB_IP=
+export METRICS_FQDN=
+
+# metrics redis
+export METRICS_REDIS_PVT_IP=
+export METRICS_REDIS_PUB_IP=
+export METRICS_REDIS_FQDN=
+
+# metrics ES
+export METRICS_ES_PVT_IP=
+export METRICS_ES_PUB_IP=
+export METRICS_ES_FQDN=
+
+# grq
+export GRQ_PVT_IP=
+export GRQ_PUB_IP=
+export GRQ_FQDN=
+export GRQ_PORT=8878
+
+# grq ES
+export GRQ_ES_PVT_IP=
+export GRQ_ES_PUB_IP=
+export GRQ_ES_FQDN=
+
+# factotum
+export FACTOTUM_PVT_IP=
+export FACTOTUM_PUB_IP=
+export FACTOTUM_FQDN=
+
+# continuous integration server
+export CI_PVT_IP=
+export CI_PUB_IP=
+export CI_FQDN=
+
+# verdi build
+###
+# Note: CI is being used as the Verdi build
+###
+#export VERDI_PVT_IP=
+#export VERDI_PUB_IP=
+#export VERDI_FQDN=
+#Not using CI as build, as CI is not on Amazon
+export VERDI_PVT_IP=
+export VERDI_PUB_IP=
+export VERDI_FQDN=
+
+export JENKINS_API_USER=
+export JENKINS_API_KEY=
+
+# WebDAV product server
+export DAV_SERVER=
+export DAV_USER=
+export DAV_PASSWORD=
+
+# AWS settings for product bucket
+export DATASET_AWS_ACCESS_KEY=
+export DATASET_AWS_SECRET_KEY=
+export DATASET_AWS_REGION=us-west-2
+export DATASET_S3_ENDPOINT=s3-us-west-2.amazonaws.com
+export DATASET_S3_WEBSITE_ENDPOINT=s3-website-us-west-2.amazonaws.com
+export DATASET_BUCKET=ops-product-bucket
+
+# AWS settings for autoscale workers
+export AWS_ACCESS_KEY=
+export AWS_SECRET_KEY=
+export AWS_REGION=us-west-2
+export S3_ENDPOINT=s3-us-west-2.amazonaws.com
+export CODE_BUCKET=ops-code-bucket
+export VERDI_PRIMER_IMAGE=s3://ops-code-bucket/hysds-verdi-20170831.tar.gz
+export VERDI_TAG=20170831
+export VERDI_UID=1001
+export VERDI_GID=1001
+export AUTOSCALE_WORKER_NAME=ops-autoscale-verdi-worker
+export PROJECTS="dumby dumby_urgent"
+
+# AWS custom metric for job count
+export MONITORED_QUEUE=dumby-job_worker-large
+
+# user_rules_dataset
+export PROVES_URL=https://prov-es.jpl.nasa.gov/beta
+export PROVES_IMPORT_URL=https://prov-es.jpl.nasa.gov/beta/api/v0.1/prov_es/import/json
+export DATASETS_CFG=/home/ops/verdi/etc/datasets.json
+
+# system jobs queue
+export SYSTEM_JOBS_QUEUE=system-jobs-queue
+
+# git oauth token
+export GIT_OAUTH_TOKEN=
+
+
+# DO NOT EDIT ANYTHING BELOW THIS
+export MOZART_ES_CLUSTER=resource_cluster
+export METRICS_ES_CLUSTER=metrics_cluster
+export DATASET_QUERY_INDEX=grq
+export USER_RULES_DATASET_INDEX=user_rules

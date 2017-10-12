@@ -1,0 +1,6 @@
+*.pyc
+cluster.py
+context.sh
+netrc
+datasets.json
+supervisord.conf.verdi

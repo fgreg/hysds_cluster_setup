@@ -1,0 +1,179 @@
+commit 1e8fea93edfbd43ed4a591824abfe7d3d5332279
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Oct 3 20:13:45 2017 +0000
+
+    update to handle non-standard ops user
+
+commit 2594e1948c2209357d56f773849b7e667bbed473
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Sep 7 01:08:09 2017 +0000
+
+    clean event index
+
+commit 1d69c1156c5de6db2cb6d0d80d38c294793a16a7
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Sep 7 00:54:19 2017 +0000
+
+    reset redis on proper node
+
+commit 92a1aa2133e2cc232c7cc55c243c1c858d065598
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Aug 31 17:03:55 2017 +0000
+
+    update verdi
+
+commit 8003790ce1911e80ea59f2f569aab09016be2759
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Aug 30 23:17:34 2017 +0000
+
+    restore template for metrics
+
+commit 05a6fc4d566dd57a1502578f94cb585cb691cd82
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Aug 29 10:57:24 2017 +0000
+
+    update verdi
+
+commit be50eb85a82a8f88c1f71622e7e6fc02f2458c5b
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Aug 29 01:42:04 2017 +0000
+
+    use private IP for mozart URL
+
+commit be307ad772e60435987691af6ab193ba09fd7b19
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Aug 28 23:03:28 2017 +0000
+
+    add sample AOI
+
+commit bfa8922bf06f85607f5a06c613259e90f18e03a2
+Author: jlinick <Justin.P.Linick@jpl.nasa.gov>
+Date:   Fri Aug 25 22:44:59 2017 +0000
+
+    add general function to get supervisorctl status
+
+commit e633a6c0af2ea4be2f95e50d1e3bba51adbf5719
+Author: jlinick <Justin.P.Linick@jpl.nasa.gov>
+Date:   Fri Aug 25 22:05:51 2017 +0000
+
+    remove unused script
+
+commit 5baa407dbb26eea6af64ec9d547f0022e7d01a6a
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Aug 24 23:44:38 2017 +0000
+
+    update verdi
+
+commit 84aed7efe6e756049e673620e7a82c9408cc135c
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Aug 24 14:05:29 2017 +0000
+
+    update verdi
+
+commit e12ad49dbc5a293f89b1d0f0b2efb48d847c2927
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Aug 24 00:58:36 2017 +0000
+
+    set default UID and GID
+
+commit b16c0250b0489f69f03be232992a6a61dc2d64d4
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Aug 23 23:29:32 2017 +0000
+
+    use generalized path
+
+commit 450c9e13d47d03864cf27cd9a881554610ca1142
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Aug 23 23:27:38 2017 +0000
+
+    expand template dir
+
+commit 4cd34229263d15a6bfd947af53e0ba05d26260f0
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Aug 23 22:24:52 2017 +0000
+
+    generalize jenkins directory location
+
+commit d196533d15229898ca427aa8ebc6d8d9943af662
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Aug 21 22:04:16 2017 +0000
+
+    add config for kibana 5
+
+commit dc85057218e4b7d873938c65d17a6203e1a58386
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Aug 21 21:04:53 2017 +0000
+
+    use generalized celery config
+
+commit db148c2fbbc85b579654644145f711e587adfa34
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Aug 21 20:57:11 2017 +0000
+
+    fix metrics path
+
+commit ec84dd2f767347b4fa483da0d889379c1a6008fc
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Aug 21 20:43:41 2017 +0000
+
+    use correct supervisord.conf for metrics
+
+commit c0b3e1e6db00895c6bd8988618eaae65d4c66f2f
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Aug 21 20:32:08 2017 +0000
+
+    copy over event_status template
+
+commit 571b80e4a50466d2c13bb80bb9b93eed6d8b5fe9
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Aug 21 20:23:16 2017 +0000
+
+    fix path to vanilla verdi supervisord.conf
+
+commit 10f9d36cc33bfc95dbd658d3abb1eb92bcbd8128
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Aug 21 20:16:51 2017 +0000
+
+    update to utilize templates from hysds
+
+commit 3014dbbbe9c445b59b3433164a931b884882a750
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Aug 17 22:39:22 2017 +0000
+
+    clean out ops directory
+
+commit 2a84548987fe08f6776421d37477f9027fccb388
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Aug 16 19:08:33 2017 +0000
+
+    use global ssh_opts and extra_opts
+
+commit 16159b05863a814c0794efe88388d9caddaf7d87
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Aug 16 14:33:25 2017 +0000
+
+    pull ops home dir from context
+
+commit 1651104f09351e9608cf4ae63d380db18b1a5ac1
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Aug 15 20:49:08 2017 +0000
+
+    change to dumby
+
+commit 5d527b40562b180a67b6593d402b479359565faa
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Aug 15 20:45:00 2017 +0000
+
+    factor out ops home dir
+
+commit 214b5c6ace2376b09f876272b2df41a835b5250c
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Aug 15 20:42:02 2017 +0000
+
+    update doc
+
+commit e79b1ed2d8eb2e69c4626e110f0222a501c49429
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Aug 15 20:39:28 2017 +0000
+
+    initial import
