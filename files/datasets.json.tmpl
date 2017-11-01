@@ -9,17 +9,17 @@
       "type": "area_of_interest",
       "publish": {
         "s3-profile-name": "default",
-        "location": "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/area_of_interest/${version}/${id}",
+        "location": "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/area_of_interest/{version}/{id}",
         "urls": [
-          "http://{{ DATASET_BUCKET }}.{{ DATASET_S3_WEBSITE_ENDPOINT }}/dev_datasets/area_of_interest/${version}/${id}",
-          "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/area_of_interest/${version}/${id}"
+          "http://{{ DATASET_BUCKET }}.{{ DATASET_S3_WEBSITE_ENDPOINT }}/dev_datasets/area_of_interest/{version}/{id}",
+          "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/area_of_interest/{version}/{id}"
         ]
       },
       "browse": {
         "s3-profile-name": "default",
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/dev_browse/area_of_interest/${version}/${id}",
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/dev_browse/area_of_interest/{version}/{id}",
         "urls": [
-          "https://{{ DAV_SERVER }}/dev_browse/area_of_interest/${version}/${id}"
+          "https://{{ DAV_SERVER }}/dev_browse/area_of_interest/{version}/{id}"
         ]
       }
     },
@@ -32,17 +32,17 @@
       "extractor": null,
       "publish": {
         "s3-profile-name": "default",
-        "location": "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/incoming/${version}/${id}",
+        "location": "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/incoming/{version}/{id}",
         "urls": [
-          "http://{{ DATASET_BUCKET }}.{{ DATASET_S3_WEBSITE_ENDPOINT }}/dev_datasets/incoming/${version}/${id}",
-          "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/incoming/${version}/${id}"
+          "http://{{ DATASET_BUCKET }}.{{ DATASET_S3_WEBSITE_ENDPOINT }}/dev_datasets/incoming/{version}/{id}",
+          "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/incoming/{version}/{id}"
         ]
       },
       "browse": {
         "s3-profile-name": "default",
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/dev_browse/incoming/${version}/${id}",
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/dev_browse/incoming/{version}/{id}",
         "urls": [
-          "https://{{ DAV_SERVER }}/dev_browse/incoming/${version}/${id}"
+          "https://{{ DAV_SERVER }}/dev_browse/incoming/{version}/{id}"
         ]
       }
     },
@@ -55,17 +55,17 @@
       "type": "dumby-data",
       "publish": {
         "s3-profile-name": "default",
-        "location": "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/dumby/${version}/${id}",
+        "location": "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/dumby/{version}/{id}",
         "urls": [
-          "http://{{ DATASET_BUCKET }}.{{ DATASET_S3_WEBSITE_ENDPOINT }}/dev_datasets/dumby/${version}/${id}",
-          "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/dumby/${version}/${id}"
+          "http://{{ DATASET_BUCKET }}.{{ DATASET_S3_WEBSITE_ENDPOINT }}/dev_datasets/dumby/{version}/{id}",
+          "s3://{{ DATASET_S3_ENDPOINT }}:80/{{ DATASET_BUCKET }}/dev_datasets/dumby/{version}/{id}"
         ]
       },
       "browse": {
         "s3-profile-name": "default",
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/dev_browse/dumby/${version}/${id}",
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/dev_browse/dumby/{version}/{id}",
         "urls": [
-          "https://{{ DAV_SERVER }}/dev_browse/dumby/${version}/${id}"
+          "https://{{ DAV_SERVER }}/dev_browse/dumby/{version}/{id}"
         ]
       }
     }

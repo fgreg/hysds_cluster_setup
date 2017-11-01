@@ -8,15 +8,15 @@
       "level": "l0",
       "type": "area_of_interest",
       "publish": {
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/repository/products/area_of_interest/${version}/${id}",
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/repository/products/area_of_interest/{version}/{id}",
         "urls": [
-          "https://{{ DAV_SERVER }}/repository/products/area_of_interest/${version}/${id}"
+          "https://{{ DAV_SERVER }}/repository/products/area_of_interest/{version}/{id}"
         ]
       },
       "browse": {
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/browse/area_of_interest/${version}/${id}",   
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/browse/area_of_interest/{version}/{id}",   
         "urls": [
-          "http://{{ DAV_SERVER }}/browse/area_of_interest/${version}/${id}"
+          "http://{{ DAV_SERVER }}/browse/area_of_interest/{version}/{id}"
         ]
       }
     },
@@ -24,20 +24,19 @@
       "ipath": "ariamh::data/incoming",
       "level": "l1",
       "type": "incoming",
-      "id_template": "${id}",
       "match_pattern": "/incoming-(?P<year>\\d{4})-(?P<month>\\d{2})-(?P<day>\\d{2})-(?P<id>.*)$",
       "alt_match_pattern": null,
       "extractor": null,
       "publish": {
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/${type}/${version}/${year}/${month}/${day}/${id}",
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/{type}/{version}/{year}/{month}/{day}/{id}",
         "urls": [
-          "https://{{ DAV_SERVER }}/${type}/${version}/${year}/${month}/${day}/${id}"
+          "https://{{ DAV_SERVER }}/{type}/{version}/{year}/{month}/{day}/{id}"
         ]
       },
       "browse": {
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/browse/${type}/${version}/${year}/${month}/${day}/${id}",   
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/browse/{type}/{version}/{year}/{month}/{day}/{id}",   
         "urls": [
-          "http://{{ DAV_SERVER }}/browse/${type}/${version}/${year}/${month}/${day}/${id}"
+          "http://{{ DAV_SERVER }}/browse/{type}/{version}/{year}/{month}/{day}/{id}"
         ]
       }
     },
@@ -49,15 +48,15 @@
       "level": "l0",
       "type": "dumby-data",
       "publish": {
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/repository/products/dumby/${version}/${id}",
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/repository/products/dumby/{version}/{id}",
         "urls": [
-          "https://{{ DAV_SERVER }}/repository/products/dumby/${version}/${id}"
+          "https://{{ DAV_SERVER }}/repository/products/dumby/{version}/{id}"
         ]
       },
       "browse": {
-        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/browse/dumby/${version}/${id}",   
+        "location": "davs://{{ DAV_USER }}:{{ DAV_PASSWORD }}@{{ DAV_SERVER }}/browse/dumby/{version}/{id}",   
         "urls": [
-          "http://{{ DAV_SERVER }}/browse/dumby/${version}/${id}"
+          "http://{{ DAV_SERVER }}/browse/dumby/{version}/{id}"
         ]
       }
     }
