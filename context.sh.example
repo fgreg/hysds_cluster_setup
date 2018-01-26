@@ -103,6 +103,7 @@ export VERDI_TAG=20170831
 export VERDI_UID=1001
 export VERDI_GID=1001
 export AUTOSCALE_WORKER_NAME=ops-autoscale-verdi-worker
+export AUTOSCALE_GROUP=verdi-ag-group
 export PROJECTS="dumby dumby_urgent"
 
 # AWS custom metric for job count
