@@ -31,8 +31,7 @@ cp -rp $BASE_PATH/etc $HOME/verdi/etc
 cp -rp $HOME/verdi/ops/hysds/celeryconfig.py $HOME/verdi/etc/
 
 # write supervisord from template
-#IPADDRESS_ETH0=$(ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}') # on amazon AMI
-IPADDRESS_ETH0=$(ifconfig eth0 | grep 'inet ' | awk '{print $2}') # on centos7 ami
+IPADDRESS_ETH0=$(ifconfig $(route | awk '/default/{print $NF}') | grep 'inet ' | sed 's/addr://' | awk '{print $2}') 
 #FQDN=$(python -c "import socket; print socket.getfqdn()")
 FQDN=$IPADDRESS_ETH0
 sed "s/__IPADDRESS_ETH0__/$IPADDRESS_ETH0/g" $HOME/verdi/etc/supervisord.conf.tmpl | \
