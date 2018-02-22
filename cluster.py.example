@@ -15,7 +15,7 @@ repo_re = re.compile(r'.+//.*?/(.*?)/(.*?)(?:\.git)?$')
 # define private EC2 IP addresses for infrastructure hosts
 context = {}
 this_dir = os.path.dirname(os.path.abspath(__file__))
-sds_cfg = os.path.expanduser('~', '.sds', 'config')
+sds_cfg = os.path.expanduser('~/.sds/config')
 with open(sds_cfg) as f:
     context = yaml.load(f)
 
