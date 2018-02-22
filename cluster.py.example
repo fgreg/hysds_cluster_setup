@@ -1,4 +1,4 @@
-import os, re
+import os, re, yaml
 from copy import deepcopy
 from fabric.api import run, cd, put, sudo, prefix, env, settings
 from fabric.contrib.files import upload_template, exists
@@ -15,11 +15,9 @@ repo_re = re.compile(r'.+//.*?/(.*?)/(.*?)(?:\.git)?$')
 # define private EC2 IP addresses for infrastructure hosts
 context = {}
 this_dir = os.path.dirname(os.path.abspath(__file__))
-with open(os.path.join(this_dir, "context.sh")) as f:
-    for i in f.readlines():
-        match = re.search(r'^export\s+(.*?)=(.*)$', i)
-        if not match: continue
-        context[match.group(1)] = match.group(2)
+sds_cfg = os.path.expanduser('~', '.sds', 'config')
+with open(sds_cfg) as f:
+    context = yaml.load(f)
 
 # define and build groups to reduce redundancy in defining roles
 

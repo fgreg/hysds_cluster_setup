@@ -4,7 +4,12 @@ source $HOME/mozart/bin/activate
 
 cd $(dirname $0)
 
-source ./context.sh
+# source yaml parser
+source ./yaml.sh
+
+
+echoerr() { echo "$@" 1>&2; }
+
 
 function check_error {
   STATUS=$?
@@ -13,6 +18,16 @@ function check_error {
     exit $STATUS
   fi
 }
+
+
+# source sds config
+SDS_CFG=$HOME/.sds/config
+if [ ! -e "$SDS_CFG" ]; then
+  echoerr "Failed to find SDS configuration at $SDS_CFG. Run 'sds configure'."
+  exit 1
+fi
+create_variables $SDS_CFG
+
 
 # stop services on metrics
 fab -f cluster.py -R metrics metricsd_stop || check_error metricsd_stop
